@@ -10,6 +10,10 @@
 package vcdss
 
 type NodeProduct struct {
+
+	// 사용할 할 OS 타입
 	SoftwareProductCode string `json:"softwareProductCode"`
+
+	// 노드가 위치할 Subnet No
 	SubnetNo            int32  `json:"subnetNo"`
 }

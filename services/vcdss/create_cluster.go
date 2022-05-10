@@ -10,16 +10,40 @@
 package vcdss
 
 type CreateCluster struct {
+
+	// 클러스터 이름
 	ClusterName              string `json:"clusterName"`
+
+	// 사용할 Cloud Data Streaming Service 버전
 	KafkaVersionCode         string `json:"kafkaVersionCode"`
+
+	// CMAK 접속 ID
 	KafkaManagerUserName     string `json:"kafkaManagerUserName"`
+
+	// CMAK 접속 Password
 	KafkaManagerUserPassword string `json:"kafkaManagerUserPassword"`
+
+	// 사용할 할 OS 타입
 	SoftwareProductCode      string `json:"softwareProductCode"`
+
+	// 사용할 VPC No
 	VpcNo                    int32  `json:"vpcNo"`
+
+	// 매니저 노드의 HW 스펙
 	ManagerNodeProductCode   string `json:"managerNodeProductCode"`
+
+	// 매니저 노드가 위치할 Subnet No
 	ManagerNodeSubnetNo      int32  `json:"managerNodeSubnetNo"`
+
+	// 브로커 노드 HW 스펙
 	BrokerNodeProductCode    string `json:"brokerNodeProductCode,omitempty"`
+
+	// 브로커 노드의 개수
 	BrokerNodeCount          int32  `json:"brokerNodeCount"`
+
+	// 브로커 노드가 위치할 Subnet No
 	BrokerNodeSubnetNo       int32  `json:"brokerNodeSubnetNo"`
+
+	// 브로커 노드의 스토리지 용량(GB)
 	BrokerNodeStorageSize    int32  `json:"brokerNodeStorageSize"`
 }

@@ -10,5 +10,7 @@
 package vcdss
 
 type ResetCmakPassword struct {
+
+	// CMAK 접속 패스워드
 	KafkaManagerUserPassword string `json:"kafkaManagerUserPassword"`
 }

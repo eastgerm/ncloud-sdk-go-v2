@@ -10,6 +10,10 @@
 package vcdss
 
 type GetSubnetList struct {
+
+	// 사용할 VPC No
 	VpcNo               int32  `json:"vpcNo"`
+
+	// 사용할 할 OS 타입
 	SoftwareProductCode string `json:"softwareProductCode"`
 }

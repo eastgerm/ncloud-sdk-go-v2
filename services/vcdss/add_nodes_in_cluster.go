@@ -10,5 +10,7 @@
 package vcdss
 
 type AddNodesInCluster struct {
+
+	// 추가할 브로커 노드의 개수
 	NewBrokerNodeCount int32 `json:"newBrokerNodeCount"`
 }

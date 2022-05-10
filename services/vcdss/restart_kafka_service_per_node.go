@@ -10,5 +10,7 @@
 package vcdss
 
 type RestartKafkaServicePerNode struct {
+
+	// Kafka 서비스를 재시작할 서버의 인스턴스 번호
 	ComputeInstanceNoList []int32 `json:"computeInstanceNoList"`
 }

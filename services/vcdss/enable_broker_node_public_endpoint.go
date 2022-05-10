@@ -10,5 +10,7 @@
 package vcdss
 
 type EnableBrokerNodePublicEndpoint struct {
+
+	// 로드밸런서 인스턴스 번호
 	LoadBalancerInstanceNo int32 `json:"loadBalancerInstanceNo"`
 }
